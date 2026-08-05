@@ -1,0 +1,11 @@
+{
+  "name": "hf-env",
+  "build": { "dockerfile": "Dockerfile" },
+  "containerEnv": { "HF_HOME": "/workspace/.hf_home" },
+  "mounts": ["source=hf-cache,target=/workspace/.hf_home,type=volume"],
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+    }
+  }
+}
